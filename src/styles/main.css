@@ -838,6 +838,9 @@ section {
 .form__label {
   display: flex;
 }
+.form__label span {
+  color: var(--error);
+}
 .form__label_text {
   padding: 10px 20px;
   background-color: var(--border);
@@ -1028,11 +1031,25 @@ section {
   max-width: 300px;
   color: var(--text-gray);
 }
+.quiz__section {
+  display: flex;
+  padding: 20px 0;
+  flex-direction: column;
+  gap: 12px;
+}
+.quiz__album_tracks_list {
+  padding: 0 0 30px;
+}
+.quiz__album_item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
 .quiz__form_single_name {
   display: flex;
   width: 100%;
   padding: 20px;
-  margin: 30px 0 0;
+  margin: 20px 0;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
