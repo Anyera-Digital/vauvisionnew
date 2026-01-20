@@ -118,6 +118,13 @@ const handleGoBack = () => {
   left: 0;
   top: 2.3px;
 }
+.quiz__preview_heading,
+.quiz__preview_description,
+.quiz__preview_attention,
+.quiz__preview_list,
+.quiz__preview_buttons {
+  max-width: 860px;
+}
 
 @media (max-width: 1439px) {
   .personal__container {

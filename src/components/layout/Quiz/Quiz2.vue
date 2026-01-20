@@ -744,10 +744,10 @@ document.addEventListener('visibilitychange', async () => {
   
   <div class="quiz__form_two_empty">
     <div class="quiz__form_two_lists">
-      <p class="quiz__form_two_description">Отметить артистов можно 3 способами:</p>
+      <p class="quiz__form_two_description text_small">Отметить артистов можно 3 способами:</p>
       <ul class="quiz__form_two_list">
         <li class="quiz__form_two_item">
-          <p class="quiz__form_two_description">Артист 1, Артист 2 (через запятую). Тогда оба артиста будут считаться основными, у всех появится своя карточка артиста, в которые попадёт релиз (либо попадёт в существующие, если карточки уже есть).</p>
+          <p class="quiz__form_two_description text_small">Артист 1, Артист 2 (через запятую). Тогда оба артиста будут считаться основными, у всех появится своя карточка артиста, в которые попадёт релиз (либо попадёт в существующие, если карточки уже есть).</p>
         </li>
         <li class="form__hint_item">
           <p class="form__hint text_small">Артист 1 feat Артист 2. Тут второй артист будет считаться второстепенным, релиз не отобразится у него в карточке. Если у Артист 2 нет карточки, то новая ему не создастся.</p>
@@ -756,8 +756,8 @@ document.addEventListener('visibilitychange', async () => {
           <p class="form__hint text_small">Артист 1 & Артист 2. В таком случае оба артиста будут считаться коллективом, для которого создастся отдельная карточка. У каждого артиста по отдельности карточки не будет, а релиз в них не попадёт.</p>
         </li>
       </ul>
-      <p class="quiz__form_two_description">Это все возможные варианты, отмечать артистов через "х" или другие знаки нельзя - площадки не принимают подобные релизы.</p>
-      <p class="quiz__form_two_description">Если вы хотите, чтобы рядом с названием трека серым цветом отображался Prod. by, то укажите это в скобках названия трека.</p>
+      <p class="quiz__form_two_description text_small">Это все возможные варианты, отмечать артистов через "х" или другие знаки нельзя - площадки не принимают подобные релизы.</p>
+      <p class="quiz__form_two_description text_small">Если вы хотите, чтобы рядом с названием трека серым цветом отображался Prod. by, то укажите это в скобках названия трека.</p>
     </div>
   </div>
   
@@ -1140,4 +1140,17 @@ document.addEventListener('visibilitychange', async () => {
 </div>
 </template>
 
-<style lang="css" scoped></style>
+<style lang="css" scoped>
+.quiz__section_title,
+.quiz__album_item_title {
+  padding: 20px 0 10px;
+}
+.quiz__form_two_lists {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.quiz__form_two_description {
+  color: var(--text-gray);
+}
+</style>

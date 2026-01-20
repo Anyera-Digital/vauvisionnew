@@ -548,15 +548,18 @@ onMounted(() => {
 }
 .form__checkbox_group .el-checkbox {
   display: flex;
+  min-height: auto;
   align-items: center;
   gap: 10px;
   color: var(--text-gray);
+}
+.form__group .form__checkbox_group .el-checkbox {
+  padding: 10px 0 0;
 }
 .quiz__form_sum {
   display: flex;
   align-items: center;
   gap: 15px;
-  margin: 20px 0;
 }
 .quiz__form_total {
   color: var(--color);
